@@ -1,0 +1,32 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="dm-garbage-item">
+
+  <template>
+
+    <style>
+    </style>
+
+    <div>name: <span>{{name}}</span></div>
+    <div>status: <span>{{status}}</span></div>
+    <div>responsible: <span>{{responsible}}</span></div>
+  <hr>
+
+  </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'dm-garbage-item',
+      properties: {
+        name: String,
+        status: String,
+        responsible: String
+      }
+
+    });
+
+  </script>
+
+</dom-module>

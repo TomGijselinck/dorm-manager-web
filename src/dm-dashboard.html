@@ -1,0 +1,32 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="./dm-garbage-list.html">
+
+<dom-module id="dm-dashboard">
+
+  <template>
+
+    <style>
+      paper-card {
+        margin: 20px;
+        padding: 15px;
+      }
+    </style>
+
+    <paper-card heading="Garbage Bags">
+      <dm-garbage-list></dm-garbage-list>
+    </paper-card>
+
+  </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'dm-dashboard'
+
+    });
+
+  </script>
+
+</dom-module>

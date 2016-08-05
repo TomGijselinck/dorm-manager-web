@@ -1,0 +1,49 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="./dm-garbage-item.html">
+
+<dom-module id="dm-garbage-list">
+
+  <template>
+
+    <style>
+    </style>
+
+    <template is="dom-repeat" items="{{garbage_bags}}">
+      <dm-garbage-item name="{{item.name}}"
+                       status="{{item.status}}"
+                       responsible="{{item.responsible}}">
+      </dm-garbage-item>
+    </template>
+
+  </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'dm-garbage-list',
+      ready: function () {
+        this.garbage_bags = [
+          {
+            "name": "brown",
+            "status": "ok",
+            "responsible": "Jim"
+          },
+          {
+            "name": "green",
+            "status": "full",
+            "responsible": "Tim"
+          },
+          {
+            "name": "glass",
+            "status": "ok",
+            "responsible": "Tom"
+          }
+        ]
+      }
+
+    });
+
+  </script>
+
+</dom-module>
